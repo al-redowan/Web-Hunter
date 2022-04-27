@@ -8,7 +8,7 @@ for url in file:
         ipadrre = socket.gethostbyname(domain)
         response = requests.get(f"https://sonar.omnisint.io/reverse/{ipadrre}").txt
         for urldata in response:
-            a=open('urllist.txt','a').write(urldata+"\n")
+            a=open('core/wordpress.py','a').write(urldata+"\n")
             a.close()
     except:
         pass    
